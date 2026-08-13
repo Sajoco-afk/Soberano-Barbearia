@@ -89,4 +89,6 @@ Projeto desenvolvido para fins de estudo e prática em desenvolvimento web.
 
 ## 📄 Licença MIT
 
-Este projeto está disponível para fins educacionais e de estudo.
+## 📄 Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
