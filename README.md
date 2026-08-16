@@ -81,6 +81,12 @@ Este projeto foi desenvolvido com o objetivo de praticar e demonstrar conhecimen
 * 🕘 Terça a sábado, das 09:00 às 19:00
 * 📲 WhatsApp: (41) 9 9806-4023
 
+## 📚 Documentação
+
+A documentação técnica do projeto está disponível em:
+
+[Documentação Técnica](documentacao-tecnica.md)
+
 ## 👨‍💻 Autor
 
 **Samuel Jorge Covalski**
