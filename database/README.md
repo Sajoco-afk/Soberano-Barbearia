@@ -97,4 +97,4 @@ Projeto desenvolvido para fins de estudo e prática em desenvolvimento web.
 
 ## 📄 Licença
 
-Este projeto está licenciado sob a [MIT License](./Licensa.MIT).
+Este projeto está licenciado sob a [MIT License](Licensa.MIT).
