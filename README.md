@@ -1,21 +1,19 @@
 # 👑 Soberano Barbearia
 
-Projeto de uma barbearia desenvolvido inicialmente como **site responsivo em HTML e CSS** e posteriormente expandido com uma **aplicação Java de console**, trazendo conceitos de programação e Programação Orientada a Objetos (POO) para o projeto.
+Projeto de uma barbearia desenvolvido inicialmente como **site responsivo em HTML e CSS** e posteriormente evoluído para uma **aplicação Java de console**, aplicando conceitos de Programação Orientada a Objetos (POO).
 
-> Projeto desenvolvido para estudos, prática de desenvolvimento web, Java e organização de sistemas.
+> Projeto desenvolvido para estudos, prática de desenvolvimento web, Java, POO e organização de sistemas.
 
 ## 📌 Sobre o projeto
 
-A **Soberano Barbearia** apresenta uma experiência digital para uma barbearia, com informações sobre serviços, preços, contato, localização e agendamento.
+A **Soberano Barbearia** apresenta uma experiência digital para uma barbearia, com serviços, preços, contato, localização e agendamento.
 
 O projeto possui atualmente duas partes:
 
-- 🌐 **Site:** interface da barbearia desenvolvida com HTML e CSS.
-- ☕ **Java:** sistema de console para cadastro de serviços e gerenciamento de agendamentos.
+- 🌐 **Site:** interface desenvolvida com HTML5 e CSS3.
+- ☕ **Java:** sistema de console para serviços, clientes e agendamentos.
 
 ## ✂️ Serviços
-
-O catálogo utilizado no sistema Java foi baseado nos serviços apresentados no site:
 
 | Serviço | Preço |
 |---|---:|
@@ -30,25 +28,60 @@ O catálogo utilizado no sistema Java foi baseado nos serviços apresentados no 
 
 ## ☕ Sistema Java
 
-O arquivo `SoberanoBarbearia.java` transforma o projeto da barbearia em uma aplicação de console.
+A versão Java foi organizada em classes independentes para praticar **POO e separação de responsabilidades**.
 
 ### Funcionalidades
 
 - 📋 Listagem de serviços e preços
-- 👤 Cadastro do nome do cliente no agendamento
+- 👤 Criação de clientes
 - 📅 Agendamento de horários
 - 🚫 Verificação de horário já ocupado
-- 📑 Consulta dos agendamentos cadastrados
+- 📑 Consulta dos agendamentos
 - 💰 Exibição do valor do serviço
 - 📍 Informações da barbearia
 - 🕐 Horário de funcionamento
-- 💳 Informações sobre formas de pagamento
+- 💳 Formas de pagamento
 
-### Conceitos de Java praticados
+### Estrutura Java
 
+```text
+Soberano-Barbearia/
+├── index.html
+├── styles.css
+├── Main.java
+├── Cliente.java
+├── Servico.java
+├── Agendamento.java
+└── README.md
+```
+
+### Classes
+
+**`Main.java`**
+
+Responsável pelo fluxo principal da aplicação, menu, entrada de dados e operações de agendamento.
+
+**`Cliente.java`**
+
+Representa o cliente da barbearia e utiliza encapsulamento com atributo privado, construtor, getter e setter.
+
+**`Servico.java`**
+
+Representa os serviços oferecidos pela barbearia, armazenando nome, preço e descrição.
+
+**`Agendamento.java`**
+
+Relaciona um `Cliente` a um `Servico`, armazenando também a data e o horário escolhidos.
+
+## 🧠 Conceitos de Java praticados
+
+- Programação Orientada a Objetos (POO)
 - Classes e objetos
 - Construtores
-- Encapsulamento básico
+- Encapsulamento
+- Atributos `private`
+- Getters e setters
+- Relacionamento entre classes
 - `ArrayList`
 - `Scanner`
 - Métodos
@@ -56,59 +89,22 @@ O arquivo `SoberanoBarbearia.java` transforma o projeto da barbearia em uma apli
 - `switch`
 - Estruturas de repetição
 - Validação de entrada
-- Organização de dados em objetos
-
-## 🌐 Site
-
-O site apresenta:
-
-- Página inicial
-- Apresentação da barbearia
-- Catálogo de cortes e serviços
-- Preços
-- Botão de agendamento via WhatsApp
-- Informações de contato
-- Endereço
-- Horário de funcionamento
-
-## 🛠️ Tecnologias
-
-### Web
-
-- HTML5
-- CSS3
-
-### Java
-
-- Java
-- Programação Orientada a Objetos
-- `Scanner`
-- `ArrayList`
-
-## 📂 Estrutura atual
-
-```text
-Soberano-Barbearia/
-├── index.html
-├── styles.css
-├── SoberanoBarbearia.java
-└── README.md
-```
+- Sobrescrita do método `toString()`
 
 ## ▶️ Como executar o sistema Java
 
 É necessário ter o **JDK (Java Development Kit)** instalado.
 
-Abra o terminal na pasta onde está o arquivo e compile:
+Abra o terminal na pasta do projeto e compile os arquivos:
 
 ```bash
-javac SoberanoBarbearia.java
+javac Main.java Cliente.java Servico.java Agendamento.java
 ```
 
 Depois execute:
 
 ```bash
-java SoberanoBarbearia
+java Main
 ```
 
 ### Menu do sistema
@@ -138,23 +134,53 @@ Horário (ex.: 14:00): 14:00
 ✓ Agendamento realizado com sucesso!
 ```
 
+## 🌐 Site
+
+O site apresenta:
+
+- Página inicial
+- Apresentação da barbearia
+- Catálogo de cortes e serviços
+- Preços
+- Botão de agendamento via WhatsApp
+- Informações de contato
+- Endereço
+- Horário de funcionamento
+
+## 🛠️ Tecnologias
+
+### Web
+
+- HTML5
+- CSS3
+
+### Java
+
+- Java
+- Programação Orientada a Objetos
+- `Scanner`
+- `ArrayList`
+
 ## 🎯 Objetivo de aprendizado
 
-Este projeto faz parte da minha evolução nos estudos de desenvolvimento de sistemas.
+Este projeto representa uma etapa da minha evolução nos estudos de Desenvolvimento de Sistemas.
 
-A proposta é pegar um projeto web já desenvolvido e evoluí-lo gradualmente, adicionando lógica de programação e conceitos de Java e POO.
+A proposta é evoluir um projeto web para uma aplicação Java, aplicando conceitos de lógica de programação e POO de forma prática.
 
-### Próximas melhorias
+### 🚀 Próximas melhorias
 
-- [ ] Separar as classes Java em arquivos individuais
-- [ ] Criar a classe `Cliente`
-- [ ] Criar a classe `Servico`
-- [ ] Criar a classe `Agendamento`
+- [x] Separar as classes Java em arquivos individuais
+- [x] Criar a classe `Cliente`
+- [x] Criar a classe `Servico`
+- [x] Criar a classe `Agendamento`
+- [x] Criar a classe `Main`
 - [ ] Criar a classe `Barbearia`
 - [ ] Implementar cancelamento de agendamento
 - [ ] Implementar alteração de agendamento
+- [ ] Validar formato de data e horário
 - [ ] Persistir os dados em banco de dados
-- [ ] Criar integração entre aplicação Java e banco de dados
+- [ ] Criar integração entre Java e MySQL
+- [ ] Criar uma interface gráfica
 
 ## 📍 Informações da barbearia
 
@@ -173,4 +199,4 @@ Estudante de Desenvolvimento de Sistemas, em transição para a área de tecnolo
 
 ---
 
-⭐ Se este projeto foi útil para você, considere deixar uma estrela no repositório!
+⭐ Projeto desenvolvido para fins de estudo e portfólio.
